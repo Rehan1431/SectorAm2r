@@ -4,7 +4,7 @@ An industry-standard personal gaming terminal and tactical walkthrough repositor
 
 ---
 
-## 🎨 Solid Matte Enterprise Design System
+## Solid Matte Enterprise Design System
 
 * **Opaque Matte Finish**: Panels solidified to `background: rgba(15, 23, 42, 0.85)` (Deep Navy) with a tightened `backdrop-filter: blur(4px)` and a crisp `1px solid rgba(255, 106, 85, 0.15)` border.
 * **Blurred Mesh Background & Parallax**: Deep cosmic navy (`#0f172a`) blended with glowing warm coral (`#501a1a` and `#ff6a55`). Attached to an active JS mouse-tracking script that smoothly lerps and shifts the gradient positions via `--parallax-x` and `--parallax-y`.
@@ -12,7 +12,7 @@ An industry-standard personal gaming terminal and tactical walkthrough repositor
 
 ---
 
-## 🔊 Synthetic Web Audio API Acoustic Feedback
+##  Synthetic Web Audio API Acoustic Feedback
 
 * **Zero external audio files**: All acoustic sound effects are computed and synthesized purely through JavaScript math and the Web Audio API.
 * **Sine Wave Hover-Beeps**: Frequency sweep from 880Hz to 1046Hz over a 35ms envelope for a crisp, futuristic interface ping.
@@ -22,7 +22,7 @@ An industry-standard personal gaming terminal and tactical walkthrough repositor
 
 ---
 
-## ⚙️ Backend Architecture (PHP & XML) & AJAX Routing
+##  Backend Architecture (PHP & XML) & AJAX Routing
 
 * **Data Layer (`data/database.xml`)**: Structured XML database holding comprehensive records for:
   1. **Resident Evil Requiem** (`re-requiem`)
@@ -39,7 +39,7 @@ An industry-standard personal gaming terminal and tactical walkthrough repositor
 
 ---
 
-## 🕹️ Interactive System Diagnostics (3-Game Suite)
+##  Interactive System Diagnostics (3-Game Suite)
 
 Located on `index.php` is a responsive 3-game grid (`grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))`) rendering three simultaneous HTML5 `<canvas>` diagnostic tools:
 
@@ -85,7 +85,7 @@ Sector Am2r/
 
 ---
 
-## 🚀 Running the Project
+##  Running the Project
 
 Ensure PHP (version 7.4+ or 8.x) is installed. 
 
