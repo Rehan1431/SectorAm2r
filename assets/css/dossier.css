@@ -1,0 +1,366 @@
+/* Classified Character Dossier & Soundboard Styling */
+
+.dossier-container {
+    flex-grow: 1;
+    padding: 24px 35px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--text-color);
+    position: relative;
+    z-index: 20;
+}
+
+/* Dossier Header */
+.dossier-header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 16px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dossier-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.classified-stamp {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 2px solid #ff3344;
+    color: #ff3344;
+    font-weight: 900;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    background: rgba(255, 51, 68, 0.08);
+    box-shadow: 0 0 10px rgba(255, 51, 68, 0.3);
+}
+
+/* Two Column Layout */
+.dossier-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/* Subject Identity Card */
+.subject-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subject-avatar-box {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    border: 1px solid var(--border-color);
+    background: #020502;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reticle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px dashed rgba(57, 255, 20, 0.4);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reticle-cross {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--neon-green);
+    border-radius: 50%;
+}
+
+/* Resource Gauges & Meters */
+.gauge-cluster {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gauge-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.gauge-label-group {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Semantic <meter> Styling with Color Shifts */
+meter.terminal-gauge {
+    width: 100%;
+    height: 18px;
+    background: #091009;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+
+/* Chrome / Safari / Edge Webkit styling for <meter> */
+meter.terminal-gauge::-webkit-meter-bar {
+    background: #050a05;
+    border: none;
+    border-radius: 2px;
+}
+
+meter.terminal-gauge::-webkit-meter-optimum-value {
+    background: linear-gradient(to right, #248b11, #39ff14);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+}
+
+meter.terminal-gauge::-webkit-meter-suboptimum-value {
+    background: linear-gradient(to right, #c27d00, #ffb300);
+    box-shadow: 0 0 10px rgba(255, 179, 0, 0.7);
+}
+
+meter.terminal-gauge::-webkit-meter-even-less-good-value {
+    background: linear-gradient(to right, #99001f, #ff1744);
+    box-shadow: 0 0 10px rgba(255, 23, 68, 0.7);
+}
+
+/* Firefox styling for <meter> */
+meter.terminal-gauge::-moz-meter-bar {
+    background: #050a05;
+}
+meter.terminal-gauge:-moz-meter-optimum::-moz-meter-bar {
+    background: #39ff14;
+    box-shadow: 0 0 10px #39ff14;
+}
+meter.terminal-gauge:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: #ffb300;
+    box-shadow: 0 0 10px #ffb300;
+}
+meter.terminal-gauge:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: #ff1744;
+    box-shadow: 0 0 10px #ff1744;
+}
+
+/* Semantic <table> for Subject Affiliations, Threat Level, Vitals */
+.dossier-table-wrapper {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dossier-section-header {
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    color: var(--neon-green);
+}
+
+table.terminal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+}
+
+table.terminal-table th,
+table.terminal-table td {
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    line-height: 1.4;
+}
+
+table.terminal-table th {
+    background: rgba(57, 255, 20, 0.12);
+    color: var(--neon-green);
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+body.theme-crimson table.terminal-table th {
+    background: rgba(255, 23, 68, 0.12);
+}
+
+body.theme-amber table.terminal-table th {
+    background: rgba(255, 179, 0, 0.12);
+}
+
+table.terminal-table tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+table.terminal-table tr:hover {
+    background: rgba(57, 255, 20, 0.08);
+}
+
+.threat-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 1px solid #ff1744;
+    background: rgba(255, 23, 68, 0.2);
+    color: #ff1744;
+}
+
+/* Audio Soundboard Section */
+.soundboard-section {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 24px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.soundboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.soundboard-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: inset 0 0 10px var(--neon-green-dim);
+    transition: all 0.2s ease;
+}
+
+.soundboard-card:hover {
+    box-shadow: 0 0 12px var(--neon-green-dim), inset 0 0 15px var(--neon-green-dim);
+}
+
+.audio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-title {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--neon-green);
+    letter-spacing: 1px;
+}
+
+.audio-tag {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+}
+
+.audio-desc {
+    font-size: 0.8rem;
+    color: #bbb;
+    line-height: 1.4;
+}
+
+/* Responsive Native Audio Control */
+audio.terminal-audio {
+    width: 100%;
+    height: 36px;
+    border-radius: 2px;
+    outline: none;
+    filter: invert(0.9) hue-rotate(90deg) contrast(1.2);
+}
+
+body.theme-crimson audio.terminal-audio {
+    filter: invert(0.9) hue-rotate(300deg) contrast(1.2);
+}
+
+body.theme-amber audio.terminal-audio {
+    filter: invert(0.9) hue-rotate(30deg) contrast(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .dossier-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .dossier-container {
+        padding: 16px 12px;
+    }
+    .soundboard-grid {
+        grid-template-columns: 1fr;
+    }
+    .dossier-title {
+        font-size: 1.4rem;
+    }
+    table.terminal-table th,
+    table.terminal-table td {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dossier-title {
+        font-size: 1.2rem;
+    }
+    .classified-stamp {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+    .subject-avatar-box {
+        height: 180px;
+    }
+    .gauge-cluster {
+        padding: 10px;
+    }
+    .gauge-label-group {
+        font-size: 0.72rem;
+    }
+    meter.terminal-gauge {
+        height: 15px;
+    }
+}

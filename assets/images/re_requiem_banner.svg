@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1205" />
+      <stop offset="50%" stop-color="#040802" />
+      <stop offset="100%" stop-color="#020401" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.15" />
+    </pattern>
+  </defs>
+  <style>
+    .theme-accent { fill: #39ff14; stroke: #39ff14; }
+    .theme-glow { filter: drop-shadow(0 0 6px #39ff14); }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg-grad)" stroke="#39ff14" stroke-width="2"/>
+  <rect width="800" height="350" fill="url(#grid)" class="theme-accent"/>
+
+  <!-- Warning Stripes Top & Bottom -->
+  <g opacity="0.25">
+    <line x1="20" y1="20" x2="780" y2="20" stroke="#39ff14" stroke-width="2" stroke-dasharray="10, 8"/>
+    <line x1="20" y1="330" x2="780" y2="330" stroke="#39ff14" stroke-width="2" stroke-dasharray="10, 8"/>
+  </g>
+
+  <!-- Biohazard Symbol Silhouette -->
+  <g class="theme-accent theme-glow" opacity="0.35" transform="translate(620, 175) scale(0.9)">
+    <circle cx="0" cy="0" r="85" fill="none" stroke-width="6"/>
+    <circle cx="0" cy="-35" r="45" fill="none" stroke-width="7"/>
+    <circle cx="-30" cy="20" r="45" fill="none" stroke-width="7"/>
+    <circle cx="30" cy="20" r="45" fill="none" stroke-width="7"/>
+    <circle cx="0" cy="0" r="22" fill="#050a02" stroke-width="6"/>
+  </g>
+
+  <!-- Terminal Framing Reticle -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#39ff14" stroke-width="3"/>
+  <path d="M 770 50 L 770 30 L 750 30" fill="none" stroke="#39ff14" stroke-width="3"/>
+  <path d="M 30 300 L 30 320 L 50 320" fill="none" stroke="#39ff14" stroke-width="3"/>
+  <path d="M 770 300 L 770 320 L 750 320" fill="none" stroke="#39ff14" stroke-width="3"/>
+
+  <!-- Tactical Data Tags -->
+  <text x="50" y="65" class="mono theme-accent" font-size="12" letter-spacing="2">UMBRELLA BIOLABS // SECTOR 04 // PROTOCOL: REQUIEM</text>
+  <text x="50" y="85" class="mono" fill="#888" font-size="11">SECURITY CLEARANCE LEVEL: OMEGA</text>
+
+  <!-- Big Title -->
+  <text x="50" y="155" class="mono theme-accent theme-glow" font-size="38" font-weight="900" letter-spacing="3">RESIDENT EVIL</text>
+  <text x="50" y="210" class="mono" fill="#ffffff" font-size="44" font-weight="bold" letter-spacing="5">R E Q U I E M</text>
+
+  <!-- Metadata Blocks -->
+  <rect x="50" y="250" width="130" height="30" fill="#091805" stroke="#39ff14" stroke-width="1"/>
+  <text x="65" y="270" class="mono theme-accent" font-size="12">SURVIVAL HORROR</text>
+
+  <rect x="195" y="250" width="120" height="30" fill="#180705" stroke="#ff3b30" stroke-width="1"/>
+  <text x="210" y="270" class="mono" fill="#ff3b30" font-size="12">NIGHTMARE DIFF</text>
+
+  <rect x="330" y="250" width="110" height="30" fill="#091805" stroke="#39ff14" stroke-width="1"/>
+  <text x="345" y="270" class="mono theme-accent" font-size="12">TIME: 14.5 HRS</text>
+
+  <text x="50" y="315" class="mono" fill="#66cc44" font-size="11">&gt;&gt; TYRANT-CLASS BIO-WEAPON TRACKER: ACTIVE &lt;&lt;</text>
+</svg>

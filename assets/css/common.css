@@ -1,0 +1,344 @@
+:root {
+    --bg-color: #060a06;
+    --neon-green: #39ff14;
+    --neon-green-dim: rgba(57, 255, 20, 0.25);
+    --neon-glow-subtle: 0 0 10px rgba(57, 255, 20, 0.4);
+    --neon-glow-strong: 0 0 20px rgba(57, 255, 20, 0.8), 0 0 40px rgba(57, 255, 20, 0.4);
+    --window-bg: #0d120d;
+    --header-bg: #1c261c;
+    --header-text: #39ff14;
+    --text-color: #39ff14;
+    --text-muted: #5e8c56;
+    --border-color: #39ff14;
+    --card-bg: rgba(13, 22, 13, 0.85);
+    --card-border: rgba(57, 255, 20, 0.4);
+    --card-hover-border: #39ff14;
+}
+
+/* Dynamic Themes */
+body.theme-crimson {
+    --bg-color: #0c0406;
+    --neon-green: #ff1744;
+    --neon-green-dim: rgba(255, 23, 68, 0.25);
+    --neon-glow-subtle: 0 0 10px rgba(255, 23, 68, 0.4);
+    --neon-glow-strong: 0 0 20px rgba(255, 23, 68, 0.8), 0 0 40px rgba(255, 23, 68, 0.4);
+    --window-bg: #18080c;
+    --header-bg: #2b0d15;
+    --header-text: #ff1744;
+    --text-color: #ff1744;
+    --text-muted: #9c4857;
+    --border-color: #ff1744;
+    --card-bg: rgba(24, 8, 12, 0.85);
+    --card-border: rgba(255, 23, 68, 0.4);
+    --card-hover-border: #ff1744;
+}
+
+body.theme-amber {
+    --bg-color: #0c0803;
+    --neon-green: #ffb300;
+    --neon-green-dim: rgba(255, 179, 0, 0.25);
+    --neon-glow-subtle: 0 0 10px rgba(255, 179, 0, 0.4);
+    --neon-glow-strong: 0 0 20px rgba(255, 179, 0, 0.8), 0 0 40px rgba(255, 179, 0, 0.4);
+    --window-bg: #191206;
+    --header-bg: #2a1f0a;
+    --header-text: #ffb300;
+    --text-color: #ffb300;
+    --text-muted: #a3823d;
+    --border-color: #ffb300;
+    --card-bg: rgba(25, 18, 6, 0.85);
+    --card-border: rgba(255, 179, 0, 0.4);
+    --card-hover-border: #ffb300;
+}
+
+/* Exclusive Easter Egg: Flashing Critical Alert Crimson Theme */
+body.theme-critical-alert {
+    --bg-color: #160105;
+    --neon-green: #ff0033;
+    --neon-green-dim: rgba(255, 0, 51, 0.5);
+    --neon-glow-subtle: 0 0 14px rgba(255, 0, 51, 0.8);
+    --neon-glow-strong: 0 0 25px rgba(255, 0, 51, 1), 0 0 50px rgba(255, 0, 51, 0.7);
+    --window-bg: #220208;
+    --header-bg: #40040f;
+    --header-text: #ffffff;
+    --text-color: #ff1a40;
+    --text-muted: #c24057;
+    --border-color: #ff0033;
+    --card-bg: rgba(34, 2, 8, 0.9);
+    --card-border: rgba(255, 0, 51, 0.7);
+    --card-hover-border: #ff4d6d;
+    animation: alertFlicker 1.4s infinite alternate ease-in-out;
+}
+
+body.theme-critical-alert .terminal-wrapper {
+    animation: alertBorderPulse 0.9s infinite alternate ease-in-out;
+}
+
+@keyframes alertFlicker {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(255, 0, 51, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 25px rgba(255, 0, 51, 0.85)) brightness(1.1);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px rgba(255, 0, 51, 0.6));
+    }
+}
+
+@keyframes alertBorderPulse {
+    0% {
+        border-color: #ff0033;
+        box-shadow: 0 0 20px rgba(255, 0, 51, 0.5), inset 0 0 25px rgba(255, 0, 51, 0.35);
+    }
+    100% {
+        border-color: #ff6680;
+        box-shadow: 0 0 45px rgba(255, 0, 51, 0.95), inset 0 0 45px rgba(255, 0, 51, 0.65);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace, 'Lucida Console';
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+/* Custom Terminal Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #020502;
+    border-left: 1px solid var(--border-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--neon-green-dim);
+    border: 1px solid var(--border-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-green);
+}
+
+/* Main Terminal Wrapper with Biohazard Glow */
+.terminal-wrapper {
+    position: relative;
+    width: 95vw;
+    height: 92vh;
+    background-color: var(--window-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 
+        0 0 25px var(--neon-green-dim),
+        inset 0 0 35px var(--neon-green-dim);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 0.25s ease;
+}
+
+.terminal-wrapper.maximized {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border-width: 1px;
+}
+
+/* CRT Scanlines Layer */
+.scanlines::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0,0,0,0.35) 50%,
+        rgba(0,0,0,0.35)
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.85;
+}
+
+/* Retro Window Header (90s Style) */
+.window-header {
+    height: 32px;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 2px solid var(--border-color);
+    color: var(--header-text);
+    font-weight: bold;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.window-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.window-title {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.window-nav-links {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.window-nav-links a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 11px;
+    padding: 2px 6px;
+    border: 1px solid var(--border-color);
+    background: rgba(0,0,0,0.4);
+    transition: all 0.15s ease;
+    white-space: nowrap;
+}
+
+.window-nav-links a:hover,
+.window-nav-links a.active {
+    background: var(--neon-green);
+    color: #000;
+}
+
+.window-controls {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.win-btn {
+    width: 18px;
+    height: 18px;
+    border: 2px outset #dfdfdf;
+    background-color: #c0c0c0;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 900;
+    padding: 0;
+    text-align: center;
+    color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.win-btn:active {
+    border: 2px inset #ffffff;
+    background-color: #a0a0a0;
+}
+.win-btn.close {
+    font-size: 12px;
+}
+.win-btn.minimize::after {
+    content: "_";
+    line-height: 8px;
+    font-size: 12px;
+}
+.win-btn.maximize::after {
+    content: "□";
+    font-size: 11px;
+    line-height: 12px;
+}
+
+/* Chromatic Aberration / RGB Shift */
+.rgb-shift {
+    text-shadow: 
+        2px 0 0 rgba(255, 0, 0, 0.8),
+        -2px 0 0 rgba(0, 150, 255, 0.8);
+}
+
+/* WebGL CRT Canvas */
+#crt-shader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* ====================================================
+   MOBILE RESPONSIVENESS (max-width: 768px & 480px)
+   ==================================================== */
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .terminal-wrapper {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        border-width: 1px 0 0 0;
+        box-shadow: none;
+    }
+
+    .window-header {
+        height: 38px;
+        padding: 0 8px;
+    }
+
+    .window-title {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        max-width: 160px;
+    }
+
+    .window-nav-links a {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .win-btn {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .window-title {
+        font-size: 10px;
+        max-width: 110px;
+    }
+
+    .window-nav-links a {
+        font-size: 9px;
+        padding: 2px 4px;
+    }
+}

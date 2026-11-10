@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <pattern id="am2r-map-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00e5ff" stroke-width="0.75" opacity="0.1" />
+    </pattern>
+  </defs>
+  <rect width="1000" height="500" fill="#091214"/>
+  <rect width="1000" height="500" fill="url(#am2r-map-grid)"/>
+
+  <!-- Subterranean Cross-Section -->
+  <g stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.45">
+    <!-- Surface & Ship -->
+    <path d="M 100 130 Q 300 100, 500 140 T 900 120" stroke-width="3"/>
+    <text x="260" y="90" fill="#00e5ff" font-family="Courier New, monospace" font-size="12">SURFACE LANDING SITE</text>
+    
+    <!-- Chozo Golden Temple -->
+    <rect x="360" y="190" width="160" height="100"/>
+    <text x="375" y="240" fill="#00e5ff" font-family="Courier New, monospace" font-size="12">GOLDEN TEMPLE B1</text>
+    
+    <!-- Geothermal Lava Shaft -->
+    <path d="M 520 250 L 680 250 L 680 380 L 580 380" stroke-dasharray="6,4"/>
+    <rect x="560" y="310" width="160" height="90"/>
+    <text x="575" y="360" fill="#ff5722" font-family="Courier New, monospace" font-size="12">GEOTHERMAL LAVA B3</text>
+    
+    <!-- Deep Queen's Core -->
+    <circle cx="780" cy="420" r="60"/>
+    <text x="735" y="425" fill="#e91e63" font-family="Courier New, monospace" font-size="12">QUEEN'S NEST</text>
+  </g>
+
+  <text x="40" y="50" fill="#00e5ff" font-family="Courier New, monospace" font-size="14" font-weight="bold">PLANET SR388 // SUBTERRANEAN STRATIGRAPHY CARTOGRAPHY</text>
+  <text x="40" y="70" fill="#777" font-family="Courier New, monospace" font-size="11">FEDERATION RECON DIVISION // BIO-SENSOR SWEEP ACTIVE</text>
+</svg>

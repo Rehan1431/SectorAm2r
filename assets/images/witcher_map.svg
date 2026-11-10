@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="witcher-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c160e" />
+      <stop offset="100%" stop-color="#0e0a06" />
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="500" fill="url(#witcher-grad)"/>
+
+  <!-- Coastline & River Pontar -->
+  <g stroke="#ffb300" stroke-width="2" fill="none" opacity="0.4">
+    <!-- Great Sea -->
+    <path d="M 120 0 Q 180 200, 140 350 T 200 500" stroke-width="3"/>
+    <text x="60" y="260" fill="#ffb300" font-family="Georgia, serif" font-size="14" font-style="italic">The Great Sea</text>
+
+    <!-- Pontar River -->
+    <path d="M 160 180 Q 350 140, 550 200 T 950 160" stroke-width="2.5" stroke-dasharray="8,4"/>
+    <text x="520" y="175" fill="#ffb300" font-family="Georgia, serif" font-size="12">Pontar River</text>
+
+    <!-- Novigrad -->
+    <circle cx="450" cy="125" r="30"/>
+    <text x="415" y="80" fill="#ffffff" font-family="Georgia, serif" font-size="14" font-weight="bold">Free City of Novigrad</text>
+
+    <!-- Crow's Perch -->
+    <rect x="300" y="220" width="80" height="60"/>
+    <text x="290" y="210" fill="#ffffff" font-family="Georgia, serif" font-size="12">Crow's Perch (Baron)</text>
+
+    <!-- Crookback Bog -->
+    <ellipse cx="580" cy="340" rx="90" ry="50"/>
+    <text x="525" y="345" fill="#9e9e9e" font-family="Georgia, serif" font-size="12">Crookback Bog (Crones)</text>
+
+    <!-- Blue Mountains & Kaer Morhen -->
+    <path d="M 780 180 L 820 90 L 860 180 L 900 80 L 940 180" stroke-width="2"/>
+    <text x="790" y="70" fill="#ffffff" font-family="Georgia, serif" font-size="12">Kaer Morhen Keep</text>
+  </g>
+
+  <!-- Cartographic Compass Rose -->
+  <g transform="translate(880, 410)" stroke="#ffb300" opacity="0.5" fill="none">
+    <circle cx="0" cy="0" r="35"/>
+    <line x1="0" y1="-45" x2="0" y2="45" stroke-width="2"/>
+    <line x1="-45" y1="0" x2="45" y2="0" stroke-width="2"/>
+    <text x="-5" y="-50" fill="#ffb300" font-family="Georgia, serif" font-size="12">N</text>
+  </g>
+
+  <text x="40" y="50" fill="#ffb300" font-family="Georgia, serif" font-size="16" font-weight="bold">MAP OF THE CONTINENT: REDANIA, NO MAN'S LAND &amp; KAER MORHEN</text>
+  <text x="40" y="72" fill="#888" font-family="Georgia, serif" font-size="12">Royal Cartographer Royal Seal // High Witcher Contracts</text>
+</svg>

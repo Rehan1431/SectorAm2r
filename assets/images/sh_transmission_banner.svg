@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sh-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140804" />
+      <stop offset="50%" stop-color="#0a0402" />
+      <stop offset="100%" stop-color="#030101" />
+    </linearGradient>
+    <pattern id="sh-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ffb300" stroke-width="0.75" opacity="0.1" />
+    </pattern>
+  </defs>
+  <style>
+    .amber { fill: #ffb300; stroke: #ffb300; }
+    .glow-amber { filter: drop-shadow(0 0 6px #ffb300); }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <rect width="800" height="350" fill="url(#sh-grad)" stroke="#ffb300" stroke-width="2"/>
+  <rect width="800" height="350" fill="url(#sh-grid)" />
+
+  <!-- Radio Static Waveforms -->
+  <g opacity="0.4" transform="translate(560, 160)">
+    <path d="M 0 0 Q 30 -40, 60 0 T 120 0 T 180 0" fill="none" stroke="#ffb300" stroke-width="2"/>
+    <path d="M 0 20 Q 30 -20, 60 20 T 120 20 T 180 20" fill="none" stroke="#ff5722" stroke-width="1.5"/>
+    <circle cx="90" cy="10" r="40" fill="none" stroke="#ffb300" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="50" y="70" class="mono" fill="#ffb300" font-size="10">FREQ: 104.7 MHZ</text>
+  </g>
+
+  <!-- Framing brackets -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#ffb300" stroke-width="3"/>
+  <path d="M 770 50 L 770 30 L 750 30" fill="none" stroke="#ffb300" stroke-width="3"/>
+  <path d="M 30 300 L 30 320 L 50 320" fill="none" stroke="#ffb300" stroke-width="3"/>
+  <path d="M 770 300 L 770 320 L 750 320" fill="none" stroke="#ffb300" stroke-width="3"/>
+
+  <text x="50" y="65" class="mono amber" font-size="12" letter-spacing="2">RADIO INTERCEPT // DISTRICT: LAKEVIEW // FOG ADVISORY</text>
+  <text x="50" y="85" class="mono" fill="#888" font-size="11">TRANSMISSION SOURCE: UNIDENTIFIED HOSPITAL SUB-LEVEL</text>
+
+  <text x="50" y="155" class="mono amber glow-amber" font-size="38" font-weight="900" letter-spacing="3">SILENT HILL</text>
+  <text x="50" y="210" class="mono" fill="#ffffff" font-size="38" font-weight="bold" letter-spacing="6">RADIO BLEED</text>
+
+  <rect x="50" y="250" width="140" height="30" fill="#241403" stroke="#ffb300" stroke-width="1"/>
+  <text x="65" y="270" class="mono amber" font-size="12">PSYCH HORROR</text>
+
+  <rect x="205" y="250" width="120" height="30" fill="#241403" stroke="#ffb300" stroke-width="1"/>
+  <text x="220" y="270" class="mono amber" font-size="12">HARDCORE DIFF</text>
+
+  <rect x="340" y="250" width="110" height="30" fill="#241403" stroke="#ffb300" stroke-width="1"/>
+  <text x="355" y="270" class="mono amber" font-size="12">TIME: 11.2 HRS</text>
+
+  <text x="50" y="315" class="mono" fill="#ffb300" font-size="11">&gt;&gt; AUDIO STATIC MODULATION DETECTED // FLASHLIGHT BATTERY LOW &lt;&lt;</text>
+</svg>

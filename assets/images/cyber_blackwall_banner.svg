@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyber-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140206" />
+      <stop offset="50%" stop-color="#0a0104" />
+      <stop offset="100%" stop-color="#040001" />
+    </linearGradient>
+    <pattern id="cyber-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ff1744" stroke-width="0.75" opacity="0.12" />
+    </pattern>
+  </defs>
+  <style>
+    .crimson { fill: #ff1744; stroke: #ff1744; }
+    .glow-crimson { filter: drop-shadow(0 0 6px #ff1744); }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <rect width="800" height="350" fill="url(#cyber-grad)" stroke="#ff1744" stroke-width="2"/>
+  <rect width="800" height="350" fill="url(#cyber-grid)" />
+
+  <!-- Cyber Glitch Hexagon & Warning Icon -->
+  <g opacity="0.4" transform="translate(620, 175)">
+    <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="none" stroke="#ff1744" stroke-width="2" stroke-dasharray="6,4"/>
+    <polygon points="0,-50 43,-25 43,25 0,50 -43,25 -43,-25" fill="#240208" stroke="#ff1744" stroke-width="1.5"/>
+    <text x="-35" y="6" class="mono crimson" font-size="14" font-weight="bold">AI_ROGUE</text>
+  </g>
+
+  <!-- Framing brackets -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#ff1744" stroke-width="3"/>
+  <path d="M 770 50 L 770 30 L 750 30" fill="none" stroke="#ff1744" stroke-width="3"/>
+  <path d="M 30 300 L 30 320 L 50 320" fill="none" stroke="#ff1744" stroke-width="3"/>
+  <path d="M 770 300 L 770 320 L 750 320" fill="none" stroke="#ff1744" stroke-width="3"/>
+
+  <text x="50" y="65" class="mono crimson" font-size="12" letter-spacing="2">NETWATCH INTRUSION LOG // SUB-LEVEL 09 // ICE BREACH</text>
+  <text x="50" y="85" class="mono" fill="#888" font-size="11">SECURITY PROTOCOL: NEURAL DISCONNECT MANDATED</text>
+
+  <text x="50" y="155" class="mono crimson glow-crimson" font-size="38" font-weight="900" letter-spacing="3">NETRUNNER</text>
+  <text x="50" y="210" class="mono" fill="#ffffff" font-size="38" font-weight="bold" letter-spacing="6">BLACKWALL BREACH</text>
+
+  <rect x="50" y="250" width="160" height="30" fill="#240208" stroke="#ff1744" stroke-width="1"/>
+  <text x="65" y="270" class="mono crimson" font-size="12">CYBERPUNK STEALTH</text>
+
+  <rect x="225" y="250" width="120" height="30" fill="#240208" stroke="#ff1744" stroke-width="1"/>
+  <text x="240" y="270" class="mono crimson" font-size="12">EXTREME DIFF</text>
+
+  <rect x="360" y="250" width="110" height="30" fill="#240208" stroke="#ff1744" stroke-width="1"/>
+  <text x="375" y="270" class="mono crimson" font-size="12">TIME: 16.0 HRS</text>
+
+  <text x="50" y="315" class="mono" fill="#ff1744" font-size="11">&gt;&gt; HOSTILE DAEMONS QUARANTINED // CYBERDECK RAM: 94% UTILIZED &lt;&lt;</text>
+</svg>

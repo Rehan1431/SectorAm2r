@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <pattern id="re-map-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4caf50" stroke-width="0.75" opacity="0.12" />
+    </pattern>
+  </defs>
+  <rect width="1000" height="500" fill="#0d140e"/>
+  <rect width="1000" height="500" fill="url(#re-map-grid)"/>
+
+  <!-- Lab Architecture Blueprint Outline -->
+  <g stroke="#4caf50" stroke-width="2" fill="none" opacity="0.5">
+    <!-- North Corridor -->
+    <rect x="180" y="80" width="640" height="70"/>
+    <!-- West Office -->
+    <rect x="220" y="150" width="160" height="180"/>
+    <text x="235" y="240" fill="#4caf50" font-family="Courier New, monospace" font-size="12">WEST OFFICE // SEC B</text>
+    <!-- Central Hall -->
+    <rect x="420" y="150" width="180" height="240"/>
+    <text x="435" y="270" fill="#4caf50" font-family="Courier New, monospace" font-size="12">AIRLOCK B-04 MAIN</text>
+    <!-- Cryogenic Lab Beta -->
+    <rect x="640" y="110" width="200" height="160"/>
+    <text x="655" y="190" fill="#4caf50" font-family="Courier New, monospace" font-size="12">CRYO LAB BETA // ARENA</text>
+    <!-- Sub-Turbine Room -->
+    <rect x="660" y="310" width="180" height="120"/>
+    <text x="675" y="370" fill="#4caf50" font-family="Courier New, monospace" font-size="12">SUB-TURBINE B1</text>
+  </g>
+
+  <!-- Connective Hallways -->
+  <path d="M 300 150 L 300 80 M 510 150 L 510 80 M 740 150 L 740 80 M 510 390 L 510 440 L 740 440 L 740 430" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+
+  <!-- Tactical Blueprint Labels -->
+  <text x="40" y="50" fill="#4caf50" font-family="Courier New, monospace" font-size="14" font-weight="bold">UMBRELLA ARKLAY COMPLEX // SECTOR 04 BLUEPRINT</text>
+  <text x="40" y="70" fill="#777" font-family="Courier New, monospace" font-size="11">SECURITY CLEARANCE: TIER OMEGA // CONTAINMENT ACTIVE</text>
+</svg>

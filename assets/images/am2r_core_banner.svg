@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="am2r-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1510" />
+      <stop offset="50%" stop-color="#050a08" />
+      <stop offset="100%" stop-color="#020504" />
+    </linearGradient>
+    <pattern id="am2r-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00e5ff" stroke-width="0.75" opacity="0.12" />
+    </pattern>
+  </defs>
+  <style>
+    .accent { fill: #00e5ff; stroke: #00e5ff; }
+    .glow { filter: drop-shadow(0 0 6px #00e5ff); }
+    .mono { font-family: 'Courier New', Courier, monospace; }
+  </style>
+
+  <rect width="800" height="350" fill="url(#am2r-grad)" stroke="#00e5ff" stroke-width="2"/>
+  <rect width="800" height="350" fill="url(#am2r-grid)" />
+
+  <!-- Metroid Radar Circle -->
+  <g opacity="0.3" transform="translate(630, 175)">
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#00e5ff" stroke-width="2" stroke-dasharray="8,6"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#00e5ff" stroke-width="1"/>
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="#00e5ff" stroke-width="1"/>
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="#00e5ff" stroke-width="1"/>
+    <circle cx="28" cy="-35" r="7" fill="#ff1744" filter="drop-shadow(0 0 5px #ff1744)"/>
+    <text x="40" y="-30" class="mono" fill="#ff1744" font-size="10">OMEGA DETECTED</text>
+  </g>
+
+  <!-- Framing brackets -->
+  <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#00e5ff" stroke-width="3"/>
+  <path d="M 770 50 L 770 30 L 750 30" fill="none" stroke="#00e5ff" stroke-width="3"/>
+  <path d="M 30 300 L 30 320 L 50 320" fill="none" stroke="#00e5ff" stroke-width="3"/>
+  <path d="M 770 300 L 770 320 L 750 320" fill="none" stroke="#00e5ff" stroke-width="3"/>
+
+  <text x="50" y="65" class="mono accent" font-size="12" letter-spacing="2">PLANETARY SURVEY // SR388 GEOTHERMAL CORE</text>
+  <text x="50" y="85" class="mono" fill="#888" font-size="11">FEDERATION RECON UNIT 17 // SAMUS ARAN LOG</text>
+
+  <text x="50" y="155" class="mono accent glow" font-size="40" font-weight="900" letter-spacing="4">PROJECT AM2R</text>
+  <text x="50" y="210" class="mono" fill="#ffffff" font-size="36" font-weight="bold" letter-spacing="6">SUB - TERRA</text>
+
+  <rect x="50" y="250" width="130" height="30" fill="#031c24" stroke="#00e5ff" stroke-width="1"/>
+  <text x="65" y="270" class="mono accent" font-size="12">METROIDVANIA</text>
+
+  <rect x="195" y="250" width="120" height="30" fill="#031c24" stroke="#00e5ff" stroke-width="1"/>
+  <text x="210" y="270" class="mono accent" font-size="12">VETERAN DIFF</text>
+
+  <rect x="330" y="250" width="110" height="30" fill="#031c24" stroke="#00e5ff" stroke-width="1"/>
+  <text x="345" y="270" class="mono accent" font-size="12">TIME: 8.0 HRS</text>
+
+  <text x="50" y="315" class="mono" fill="#00e5ff" font-size="11">&gt;&gt; SEISMIC READINGS STABILIZED // POWER SUIT ARMORED &lt;&lt;</text>
+</svg>

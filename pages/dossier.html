@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classified Character Dossier // Sector Am2r</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/dossier.css">
+</head>
+<body>
+    <div class="terminal-wrapper">
+        <div class="scanlines"></div>
+
+        <!-- Retro 90s Window Header -->
+        <header class="window-header">
+            <div class="window-header-left">
+                <div class="window-title rgb-shift">SECTOR AM2R.EXE // CLASSIFIED BIOLOGICAL ARCHIVE</div>
+                <nav class="window-nav-links">
+                    <a href="../index.html">&lt; TERMINAL</a>
+                    <a href="walkthrough.html?game=re-requiem">WALKTHROUGH</a>
+                    <a href="dossier.html" class="active">DOSSIER</a>
+                </nav>
+            </div>
+            <div class="window-controls">
+                <button class="win-btn minimize" aria-label="Minimize" title="Minimize Window"></button>
+                <button class="win-btn maximize" aria-label="Maximize" title="Maximize Window"></button>
+                <button class="win-btn close" aria-label="Close" title="Terminate Session">X</button>
+            </div>
+        </header>
+
+        <!-- Main Dossier Container -->
+        <main class="dossier-container">
+            <!-- Header Section -->
+            <div class="dossier-header">
+                <div>
+                    <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:6px;">
+                        ARCHIVE REF: UMB-BIO-0984-X // BIOLOGICAL SURVEILLANCE
+                    </div>
+                    <h1 class="dossier-title rgb-shift">SUBJECT DOSSIER: NEMESIS-REQUIEM &amp; OPERATIVE INTEL</h1>
+                    <p style="font-size:0.85rem;color:#888;margin-top:4px;">
+                        RESTRICTED TO PERSONNEL WITH CLEARANCE TIER: OMEGA-BIOHAZARD
+                    </p>
+                </div>
+                <div>
+                    <span class="classified-stamp">CLASSIFIED // EYES ONLY</span>
+                </div>
+            </div>
+
+            <!-- Subject Identity & Vital Gauges Layout -->
+            <div class="dossier-layout">
+                <!-- Left: Subject Avatar & Resource Gauges -->
+                <div class="subject-card">
+                    <div class="subject-avatar-box">
+                        <img src="../assets/images/re_requiem_banner.svg" alt="Subject Photographic Recon" class="subject-avatar-img">
+                        <div class="reticle-overlay">
+                            <div class="reticle-cross"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align:center;">
+                        <h3 class="rgb-shift" style="font-size:1.2rem;letter-spacing:1px;">SPECIMEN X-09 // "NEMESIS-T"</h3>
+                        <p style="font-size:0.8rem;color:var(--text-muted);">HOST STRAIN: NE-ALPHA PARASITE MUTATION</p>
+                    </div>
+
+                    <!-- Resource Gauges using <meter> tags -->
+                    <div class="gauge-cluster">
+                        <div class="gauge-row">
+                            <div class="gauge-label-group">
+                                <span>CELLULAR VITALITY (HEALTH)</span>
+                                <span style="color:var(--neon-green)">92% [OPTIMAL]</span>
+                            </div>
+                            <meter class="terminal-gauge" min="0" max="100" low="30" high="70" optimum="90" value="92"></meter>
+                        </div>
+
+                        <div class="gauge-row">
+                            <div class="gauge-label-group">
+                                <span>VIRAL INFECTION RATE</span>
+                                <span style="color:#ff1744">88% [CRITICAL]</span>
+                            </div>
+                            <!-- Infection is high, representing danger (low optimum) -->
+                            <meter class="terminal-gauge" min="0" max="100" low="30" high="70" optimum="10" value="88"></meter>
+                        </div>
+
+                        <div class="gauge-row">
+                            <div class="gauge-label-group">
+                                <span>PARASITIC STAMINA / ADRENALINE</span>
+                                <span style="color:#ffb300">65% [ELEVATED]</span>
+                            </div>
+                            <meter class="terminal-gauge" min="0" max="100" low="30" high="70" optimum="90" value="65"></meter>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Semantic Table for Affiliations, Threat Level, Vitals -->
+                <div class="dossier-table-wrapper">
+                    <h2 class="dossier-section-header rgb-shift">[ SUBJECT BIOMETRICS &amp; SURVEILLANCE RECORDS ]</h2>
+                    
+                    <table class="terminal-table">
+                        <thead>
+                            <tr>
+                                <th>SURVEILLANCE PARAMETER</th>
+                                <th>RECORDED SPECIFICATION</th>
+                                <th>STATUS / REMARKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Codename / Designation</strong></td>
+                                <td>Nemesis-T (Type-Requiem)</td>
+                                <td><span style="color:var(--neon-green)">ACTIVE PURSUIT</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Subject Affiliation</strong></td>
+                                <td>Umbrella Corp Bio-Weapons Division</td>
+                                <td>Special Research Unit Europe</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Threat Level Assessment</strong></td>
+                                <td>Class-IV Biohazard Apex Predator</td>
+                                <td><span class="threat-pill">EXTREME / LETHAL</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pulse / Heart Rate</strong></td>
+                                <td>145 BPM (Artificially Augmented)</td>
+                                <td>Secondary pericardial organ verified</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Armor &amp; Ballistic Resistance</strong></td>
+                                <td>Polymer-Infused Dermal Layer</td>
+                                <td>Standard 9mm ineffective; use High-Explosive</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Primary Target Directive</strong></td>
+                                <td>Extermination of S.T.A.R.S. Personnel</td>
+                                <td>Non-negotiable programmed directive</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Last Sighted Coordinates</strong></td>
+                                <td>Sector 04 Sub-Level 2 Pump Station</td>
+                                <td>Thermal signature moving West</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="font-size:0.8rem;color:#888;line-height:1.5;margin-top:8px;border-left:2px solid var(--neon-green);padding-left:12px;">
+                        <em>Tactical Advisory: Specimen exhibits progressive regeneration. If dismembered, the NE-Alpha parasite will decouple and seek organic assimilation from surrounding hosts. Maintain minimum 15-meter stand-off distance.</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Soundboard Section -->
+            <section class="soundboard-section">
+                <h2 class="dossier-section-header rgb-shift">
+                    <span>[ SURVEILLANCE AUDIO SOUNDBOARD &amp; TRANSMISSIONS ]</span>
+                </h2>
+                <p style="font-size:0.85rem;color:var(--text-muted);margin-top:4px;">
+                    Declassified surveillance recordings, radio chatter, and seismic audio feeds captured in Sector 04.
+                </p>
+
+                <div class="soundboard-grid">
+                    <!-- Audio Card 1 -->
+                    <div class="soundboard-card">
+                        <div class="audio-header">
+                            <span class="audio-title">COMBAT DIALOGUE</span>
+                            <span class="audio-tag">RADIO 01</span>
+                        </div>
+                        <p class="audio-desc">Tactical recon operative radio confirmation regarding airlock breach.</p>
+                        <audio class="terminal-audio" controls preload="metadata">
+                            <source src="../assets/audio/dialogue_line1.wav" type="audio/wav">
+                            Your browser does not support WAV audio playback.
+                        </audio>
+                    </div>
+
+                    <!-- Audio Card 2 -->
+                    <div class="soundboard-card">
+                        <div class="audio-header">
+                            <span class="audio-title">ENCRYPTED CHATTER</span>
+                            <span class="audio-tag">COMMS 04</span>
+                        </div>
+                        <p class="audio-desc">Military band encrypted burst transmission with analog squelch.</p>
+                        <audio class="terminal-audio" controls preload="metadata">
+                            <source src="../assets/audio/radio_chatter.wav" type="audio/wav">
+                            Your browser does not support WAV audio playback.
+                        </audio>
+                    </div>
+
+                    <!-- Audio Card 3 -->
+                    <div class="soundboard-card">
+                        <div class="audio-header">
+                            <span class="audio-title" style="color:#ff3344">BIOHAZARD SIREN</span>
+                            <span class="audio-tag" style="border-color:#ff3344;color:#ff3344">ALARM</span>
+                        </div>
+                        <p class="audio-desc">Facility-wide containment failure emergency siren oscillating at 880Hz.</p>
+                        <audio class="terminal-audio" controls preload="metadata">
+                            <source src="../assets/audio/biohazard_alert.wav" type="audio/wav">
+                            Your browser does not support WAV audio playback.
+                        </audio>
+                    </div>
+
+                    <!-- Audio Card 4 -->
+                    <div class="soundboard-card">
+                        <div class="audio-header">
+                            <span class="audio-title">AMBIENT LAB DRONE</span>
+                            <span class="audio-tag">OST // AMB</span>
+                        </div>
+                        <p class="audio-desc">Sub-bass environmental synth resonance recorded in cryogenic storage.</p>
+                        <audio class="terminal-audio" controls preload="metadata">
+                            <source src="../assets/audio/ambient_theme.wav" type="audio/wav">
+                            Your browser does not support WAV audio playback.
+                        </audio>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- WebGL CRT Overlay -->
+    <canvas id="crt-shader"></canvas>
+
+    <script src="../assets/js/common.js"></script>
+    <script>
+        // Adjust page context dynamically if another game is requested
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get('game');
+            if (!gameId || gameId === 're-requiem') return;
+
+            try {
+                const res = await fetch('../data/games.json');
+                const games = await res.json();
+                const game = games.find(g => g.id.toLowerCase() === gameId.toLowerCase());
+                if (game) {
+                    document.querySelector('.dossier-title').textContent = `SUBJECT DOSSIER: ${game.title.toUpperCase()}`;
+                    document.querySelector('.subject-avatar-img').src = `../${game.bannerImage}`;
+                }
+            } catch (e) {
+                console.warn('Could not load game metadata for dossier:', e);
+            }
+        });
+    </script>
+</body>
+</html>

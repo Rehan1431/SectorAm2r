@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <!-- GAME 1: Resident Evil Requiem -->
+    <game id="re-requiem">
+        <title>Resident Evil Requiem</title>
+        <subtitle>Survival Horror Dossier &amp; Tactical Walkthrough</subtitle>
+        <genre>Survival Horror // Tactical Quarantine</genre>
+        <badge>SURVIVAL HORROR</badge>
+        <difficulty>Nightmare</difficulty>
+        <time>14.5 Hours</time>
+        <banner>assets/images/re_requiem_banner.svg</banner>
+        <developer>Umbrella R&amp;D Special Division</developer>
+        <target_hardware>RTX 3050 (6GB) / i7-13620H</target_hardware>
+        <audio_target>boAt Rockerz (FxSound EQ)</audio_target>
+        <summary>Navigate the corrupted Arklay bio-research complex, conserve scarce ammunition, decipher cryogenic valve pressure puzzles, and evade relentless Nemesis stalker mutations.</summary>
+        
+        <walkthrough>
+            <step>
+                <number>1</number>
+                <title>Infiltrate the Arklay Sector 4 Decontamination Chamber</title>
+                <text>Proceed down the service corridor avoiding broken steam conduits. Search locker 04 for the standard issue 9mm Handgun and 15 rounds of hollow-point ammunition.</text>
+            </step>
+            <step>
+                <number>2</number>
+                <title>Restore Auxiliary Generator Power in Sub-Level B1</title>
+                <text>Navigate through the flooded boiler room. Dispatch the two mutated research staff using focused headshots to trigger stagger frames, then flip the main breaker sequence (Switches 1, 3, and 4).</text>
+            </step>
+            <step>
+                <number>3</number>
+                <title>Decipher the Virologist's Chemical Valve Puzzle</title>
+                <text>Enter the cryogenic synthesis lab. Balance the cooling valve pressures to extract the Compound-Alpha antigen vial before the containment lockdown countdown expires.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Cryogenic Pressure Sequence</datapad_title>
+                    <datapad_badge>CLASSIFIED PUZZLE</datapad_badge>
+                    <datapad_text>Valve Calibration Solution: Valves must be rotated in counter-balanced pairs to prevent nitrogen pipeline overload.</datapad_text>
+                    <datapad_code>Valve B → Valve D → Valve A → Valve C (42.8 PSI)</datapad_code>
+                    <datapad_note>Exceeding 45 seconds triggers an acidic drainage purge.</datapad_note>
+                </datapad>
+            </step>
+            <step>
+                <number>4</number>
+                <title>Acquire the Sector Security Keycard &amp; Magnum Armament</title>
+                <text>Inspect the security chief's desk in the West Office. The hidden wall safe contains the Magnum cylinder extension and Clearance Card Level 2.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Chief Safe Dial Combination</datapad_title>
+                    <datapad_badge>CLASSIFIED CODE</datapad_badge>
+                    <datapad_text>Safe Mechanism: Turn the dial slowly to prevent tumbler lockouts.</datapad_text>
+                    <datapad_code>Left 34 → Right 12 → Left 88</datapad_code>
+                    <datapad_note>Reward: Lightning Hawk .44 Magnum + 6 High-Explosive Rounds.</datapad_note>
+                </datapad>
+            </step>
+            <step>
+                <number>5</number>
+                <title>Survive the Nemesis Prototype Ambush</title>
+                <text>When the heavy blast door ruptures, do not engage in static combat. Lure the entity beneath overhead cryogenic pipes, shoot the release valves to freeze its armor plating, and sprint toward the emergency lift.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Nemesis Lore &amp; Extraction Trap</datapad_title>
+                    <datapad_badge>PLOT SPOILER</datapad_badge>
+                    <datapad_text>Host Identity: The Nemesis parasite host is revealed to be Captain Marcus from Bravo squad. Extraction orders from Umbrella command are compromised.</datapad_text>
+                    <datapad_code>EVACUATE DIRECTLY TO ROOFTOP HELIPAD</datapad_code>
+                    <datapad_note>Do not enter the underground tram line; it is rigged with thermite charges.</datapad_note>
+                </datapad>
+            </step>
+        </walkthrough>
+
+        <snapshots>
+            <snapshot>
+                <title>Snapshot 01: Decontamination Airlock</title>
+                <caption>Corridor atmospheric security view</caption>
+                <icon>corridor</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 02: Virologist Lab Console</title>
+                <caption>Chemical centrifuge puzzle layout</caption>
+                <icon>flask</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 03: Cryogenic Storage Tanks</title>
+                <caption>Boss encounter arena layout</caption>
+                <icon>snowflake</icon>
+            </snapshot>
+            <video_mock>
+                <title>Gameplay Demonstration Feed: Boss Encounter &amp; Evasion Tactics</title>
+                <subtext>[ Mock Video Player // 1080p 60FPS Tactical Capture ]</subtext>
+                <caption_desc>Demonstrates optimal sprint timing, cryogenic valve environmental triggers, and weak-point targeting against the Nemesis prototype.</caption_desc>
+            </video_mock>
+        </snapshots>
+
+        <map>
+            <title>Interactive Tactical Sector Map</title>
+            <subtitle>Hover over glowing coordinates to inspect key reconnaissance points inside Arklay Sector 04.</subtitle>
+            <svg_image>assets/images/re_map.svg</svg_image>
+            <radar_label>TACTICAL RADAR // ARKLAY SECTOR 04 BLUEPRINT</radar_label>
+            <radar_coords>COORDINATES: 45.882° N, 12.441° E // GRID REF: SEC-B2</radar_coords>
+            <markers>
+                <marker top="38%" left="26%">
+                    <title>West Office // Security Desk</title>
+                    <desc>Chief safe (34-12-88), shotgun shells &amp; Clearance Keycard</desc>
+                </marker>
+                <marker top="68%" left="48%">
+                    <title>Airlock B-04 // Primary Entry</title>
+                    <desc>Decontamination pressure valve &amp; ink ribbon save typewriter</desc>
+                </marker>
+                <marker top="28%" left="78%">
+                    <title>Cryogenic Lab Beta // Boss Arena</title>
+                    <desc>Nemesis prototype containment &amp; overhead liquid nitrogen pipes</desc>
+                </marker>
+                <marker top="78%" left="82%">
+                    <title>Sub-Turbine Room B1</title>
+                    <desc>Auxiliary electrical breaker switches 1, 3, and 4</desc>
+                </marker>
+            </markers>
+        </map>
+
+        <characters>
+            <character role="Protagonist // Operative">
+                <name>Claire Redfield</name>
+                <type>Protagonist</type>
+                <bio>Equipped with customized reinforced survival gear, field medical training, and high-caliber sidearms. Specializes in emergency crafting and agility-focused evasions.</bio>
+            </character>
+            <character role="Antagonist // Apex Threat">
+                <name>Nemesis-T (Type-Requiem)</name>
+                <type>Antagonist</type>
+                <bio>Genetically altered combat stalker driven by a cybernetically bonded NE-Alpha parasite. Possesses rapid dermal regeneration, tentacle lash strikes, and persistent tracking algorithms.</bio>
+            </character>
+        </characters>
+
+        <calibration>
+            <hardware>
+                <title>Hardware Calibration: RTX 3050 (6GB Mobile) / Core i7-13620H</title>
+                <target>STABLE 60 FPS TARGET</target>
+                <subtitle>Tested configuration for minimizing 1% low frame stutter and keeping VRAM utilization below the 5.8GB allocation threshold.</subtitle>
+                <row>
+                    <param>Ray Tracing (Global Illumination / Reflections)</param>
+                    <value>DISABLED (OFF)</value>
+                    <impact>Eliminates heavy BVH traversal latency; prevents severe 1% low FPS dips down into the 20s.</impact>
+                </row>
+                <row>
+                    <param>Texture Quality &amp; VRAM Budget</param>
+                    <value>MEDIUM (3GB Pool)</value>
+                    <impact>Prevents 6GB VRAM overflow which triggers severe PCIe bandwidth hitching and asset pop-in.</impact>
+                </row>
+                <row>
+                    <param>Resolution Scaling / Upscaling</param>
+                    <value>DLSS // QUALITY MODE</value>
+                    <impact>Renders at 720p with AI reconstruction to native 1080p, delivering +28% framerate boost with sharp edges.</impact>
+                </row>
+                <row>
+                    <param>Volumetric Fog &amp; Shadow Cache</param>
+                    <value>HIGH // ENABLED</value>
+                    <impact>i7-13620H easily manages shadow drawcalls; caching saves GPU cycles during intense flashlight sweeps.</impact>
+                </row>
+                <row>
+                    <param>Framerate Cap / Reflex Low Latency</param>
+                    <value>60 FPS // ON + BOOST</value>
+                    <impact>Ensures smooth frame pacing while maintaining instantaneous trigger response for evasion parries.</impact>
+                </row>
+            </hardware>
+            <audio>
+                <title>Acoustic Calibration: boAt Rockerz (FxSound / Sound Blaster EQ)</title>
+                <target>FOOTSTEP ENHANCED PROFILE</target>
+                <subtitle>Custom frequency equalization curve tailored for boAt Rockerz Bluetooth/Aux gaming headsets to enhance enemy spatial audio while dampening fatiguing sirens.</subtitle>
+                <row>
+                    <band>125 Hz (Low-End Punch)</band>
+                    <gain>+4.5 dB</gain>
+                    <role>Elevates damp boot footsteps, floor creaks, and subtle heavy breathing of stalkers behind walls.</role>
+                </row>
+                <row>
+                    <band>250 Hz - 500 Hz (Lower Mids)</band>
+                    <gain>+1.0 dB</gain>
+                    <role>Enriches radio communications and adds tactile body to pistol and magnum discharges.</role>
+                </row>
+                <row>
+                    <band>2 kHz - 4 kHz (Presence &amp; Details)</band>
+                    <gain>+2.5 dB</gain>
+                    <role>Clarifies glass shards crunching, door latch unlocks, and metallic item drop cues.</role>
+                </row>
+                <row>
+                    <band>8 kHz - 12 kHz (High-End Treble)</band>
+                    <gain>-3.5 dB</gain>
+                    <role>Cuts harsh piercing frequencies from facility emergency alarm sirens to prevent listener fatigue.</role>
+                </row>
+                <row>
+                    <band>Surround Spatializer (FxSound)</band>
+                    <gain>LEVEL 65%</gain>
+                    <role>Expands soundstage width, providing accurate 360-degree positional orientation for Nemesis roars.</role>
+                </row>
+            </audio>
+        </calibration>
+
+        <lore>
+            <item>
+                <title>Sound Design Architecture</title>
+                <fact>The environmental background reverberation in the Arklay Sector 4 lab was captured inside an abandoned decommissioned water filtration tunnel in Germany.</fact>
+            </item>
+            <item>
+                <title>Classic Fixed Camera Homage</title>
+                <fact>Toggling the "Classic Surveillance" setting in the options menu locks camera angles to vintage pre-rendered perspectives reminiscent of the 1996 classic.</fact>
+            </item>
+            <item>
+                <title>Nemesis AI Adaptation</title>
+                <fact>The creature dynamically learns player evasion habits—frequently dodging through the same hallway doors causes Nemesis to predict your escape vector and spawn barricades.</fact>
+            </item>
+            <item>
+                <title>Cut Content Restorations</title>
+                <fact>Several puzzles and notes in this release restore concept documents originally drafted during the Capcom production cycles of 1998 that were previously deemed too complex for original hardware.</fact>
+            </item>
+        </lore>
+    </game>
+
+    <!-- GAME 2: Project AM2R -->
+    <game id="am2r">
+        <title>Project AM2R: Sub-Terra</title>
+        <subtitle>Planetary Reconnaissance &amp; Biomechanical Systems Guide</subtitle>
+        <genre>Sci-Fi Metroidvania // Subterranean Exploration</genre>
+        <badge>METROIDVANIA</badge>
+        <difficulty>Veteran</difficulty>
+        <time>8.0 Hours</time>
+        <banner>assets/images/am2r_core_banner.svg</banner>
+        <developer>DoctorM64 &amp; Community Devs</developer>
+        <target_hardware>RTX 3050 (6GB) / i7-13620H</target_hardware>
+        <audio_target>boAt Rockerz (FxSound EQ)</audio_target>
+        <summary>Infiltrate the volcanic caverns of SR388, upgrade Samus Aran's beam armaments, drain subterranean geothermal acid pools, and eradicate aggressive Metroid evolutions.</summary>
+        
+        <walkthrough>
+            <step>
+                <number>1</number>
+                <title>Deploying to the Surface &amp; Securing Morph Ball</title>
+                <text>Touch down at the landing site. Descend into the outer surface caverns to the right. Roll through the narrow crevice to claim the Morph Ball and Power Bomb expansion pods.</text>
+            </step>
+            <step>
+                <number>2</number>
+                <title>Neutralize the Golden Temple Alpha Metroids</title>
+                <text>Descend into the Chozo ancient ruins. Defeat the first two airborne Alpha Metroids by tracking their aerial dive attacks and firing five concussive Missiles into their soft ventral membranes.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Secret Energy Tank &amp; Super Missile Route</datapad_title>
+                    <datapad_badge>MAP SPOILER</datapad_badge>
+                    <datapad_text>Hidden Chozo Shrine Corridor: Behind the second Chozo statue, shoot the cracked sand block with two standard Missiles.</datapad_text>
+                    <datapad_code>SECTOR 01 // SUB-SHAFT 03</datapad_code>
+                    <datapad_note>Reward: Early Super Missile Cache + 100 HP Energy Tank.</datapad_note>
+                </datapad>
+            </step>
+            <step>
+                <number>3</number>
+                <title>Trigger the Seismic Hydro-Drain</title>
+                <text>Once the initial Metroid brood in Sector 1 is eradicated, seismic sensors will trigger an earthquake, draining the subterranean acid pool to expose lower access shafts.</text>
+            </step>
+            <step>
+                <number>4</number>
+                <title>Recover the Varia Suit &amp; High-Jump Boots</title>
+                <text>Traverse the geothermal lava fields. Bypass heated steam chambers quickly to enter the secondary Chozo statue chamber to receive the Varia Suit thermal shielding.</text>
+            </step>
+            <step>
+                <number>5</number>
+                <title>Confront the Zeta &amp; Omega Bio-Behemoths</title>
+                <text>Enter the subterranean breeding grounds. Evade devastating ground-pound shockwaves and deploy charged Ice Beam barrages to freeze outer carapaces before delivering Super Missile payloads.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Omega Metroid Vulnerability Stun-Lock</datapad_title>
+                    <datapad_badge>TACTICAL COMBAT SPOILER</datapad_badge>
+                    <datapad_text>Frame-Perfect Stun Lock: Charge your Ice Beam prior to the Omega's ground-pound roar. Jump immediately after the tremor to fire directly at its throat, canceling the flame breath and granting a 3-second opening for 4 Super Missiles.</datapad_text>
+                    <datapad_code>EXPOSED BACK &amp; MOUTH MEMBRANE</datapad_code>
+                    <datapad_note>Avoid crouching beneath its tail; acid dripping deals rapid contact damage.</datapad_note>
+                </datapad>
+            </step>
+        </walkthrough>
+
+        <snapshots>
+            <snapshot>
+                <title>Snapshot 01: Surface Landing Zone</title>
+                <caption>Gunship extraction point &amp; save pod</caption>
+                <icon>rocket</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 02: Geothermal Lava Chambers</title>
+                <caption>Acid drainage mechanism in action</caption>
+                <icon>flame</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 03: Ancient Chozo Ruins</title>
+                <caption>High-mobility grapple beam puzzle</caption>
+                <icon>landmark</icon>
+            </snapshot>
+            <video_mock>
+                <title>Gameplay Demonstration Feed: Omega Metroid Combat Tactics</title>
+                <subtext>[ Mock Video Player // 1080p 60FPS Boss Speedrun Capture ]</subtext>
+                <caption_desc>Demonstrates mid-air Spider Ball positioning, Super Missile salvo management, and frame-perfect evasion during ground shockwaves.</caption_desc>
+            </video_mock>
+        </snapshots>
+
+        <map>
+            <title>Planet SR388 Subterranean Survey Map</title>
+            <subtitle>Hover over glowing markers to reveal key Chozo landmarks and Metroid nesting territories.</subtitle>
+            <svg_image>assets/images/am2r_map.svg</svg_image>
+            <radar_label>FEDERATION CARTOGRAPHY // PLANET SR388 SUB-TERRA</radar_label>
+            <radar_coords>SECTOR DEPTH: -2,400M // SEISMIC MONITOR: ACTIVE</radar_coords>
+            <markers>
+                <marker top="22%" left="32%">
+                    <title>Surface Landing Zone</title>
+                    <desc>Samus's gunship, missile refill, and planetary extraction point</desc>
+                </marker>
+                <marker top="45%" left="42%">
+                    <title>Golden Temple // Chozo Shrine</title>
+                    <desc>Alpha Metroid nesting grounds &amp; Morph Ball upgrade chamber</desc>
+                </marker>
+                <marker top="68%" left="62%">
+                    <title>Geothermal Caverns B3</title>
+                    <desc>Acid drainage barrier &amp; Varia Suit Chozo statue</desc>
+                </marker>
+                <marker top="84%" left="78%">
+                    <title>The Core // Queen's Hive</title>
+                    <desc>Omega mutations &amp; Metroid Queen biological epicenter</desc>
+                </marker>
+            </markers>
+        </map>
+
+        <characters>
+            <character role="Protagonist // Bounty Hunter">
+                <name>Samus Aran</name>
+                <type>Protagonist</type>
+                <bio>Infused with Chozo DNA and outfitted with a bio-mechanical Power Suit capable of integrating beam upgrades, high-mobility thrusters, and explosive ordnance.</bio>
+            </character>
+            <character role="Antagonist // Brood Matriarch">
+                <name>The Metroid Queen</name>
+                <type>Antagonist</type>
+                <bio>Colossal apex lifeform anchoring the SR388 ecosystem. Features an elongated neck reach, armored chitin invulnerable to standard ordnance, and acidic projectile spit.</bio>
+            </character>
+        </characters>
+
+        <calibration>
+            <hardware>
+                <title>Hardware Calibration: RTX 3050 (6GB Mobile) / Core i7-13620H</title>
+                <target>LOCKED 144 HZ PIXEL-PERFECT</target>
+                <subtitle>Configuration designed for high-refresh 2D platforming, eliminating input latency during wall-jumping and morph-ball bomb leaps.</subtitle>
+                <row>
+                    <param>Display Mode &amp; Scaling</param>
+                    <value>EXCLUSIVE FULLSCREEN // 4X INTEGER</value>
+                    <impact>Prevents non-integer pixel shimmering and reduces DWM desktop composition input lag to near zero.</impact>
+                </row>
+                <row>
+                    <param>V-Sync &amp; NVIDIA Reflex</param>
+                    <value>FAST SYNC (NVCP) // ULTRA LOW LATENCY</value>
+                    <impact>Avoids tearing at 144Hz without buffering input frames; crucial for precise bomb jump chains.</impact>
+                </row>
+                <row>
+                    <param>GPU Power State (Control Panel)</param>
+                    <value>PREFER MAXIMUM PERFORMANCE</value>
+                    <impact>Prevents mobile RTX 3050 from downclocking to low-power P-states during lightweight 2D sprite loads.</impact>
+                </row>
+                <row>
+                    <param>CPU Affinity (i7-13620H)</param>
+                    <value>P-CORES ONLY (CORES 0-5)</value>
+                    <impact>Prevents micro-stutter by keeping GameMaker execution threads off Intel efficiency E-cores.</impact>
+                </row>
+            </hardware>
+            <audio>
+                <title>Acoustic Calibration: boAt Rockerz (FxSound / Sound Blaster EQ)</title>
+                <target>SUBTERRANEAN AMBIENCE PROFILE</target>
+                <subtitle>Frequency balancing tuned for deep underground cave resonance and crystal-clear charge beam hums.</subtitle>
+                <row>
+                    <band>60 Hz - 125 Hz (Sub-Bass)</band>
+                    <gain>+3.5 dB</gain>
+                    <role>Amplifies subterranean seismic rumbles, acid drainage drops, and heavy Metroid landing thuds.</role>
+                </row>
+                <row>
+                    <band>1 kHz - 2 kHz (Core Gameplay Mids)</band>
+                    <gain>+1.5 dB</gain>
+                    <role>Crisp articulation for Missile fire clicks, Morph ball bomb detonations, and energy pickup chime.</role>
+                </row>
+                <row>
+                    <band>6 kHz - 8 kHz (Upper Presence)</band>
+                    <gain>-2.0 dB</gain>
+                    <role>Smooths high-pitched screeching cries of flying Gamma and Zeta Metroids during chaotic dogfights.</role>
+                </row>
+                <row>
+                    <band>FxSound Clarity / Reverb</band>
+                    <gain>CLARITY 40% // REVERB 30%</gain>
+                    <role>Adds authentic cavernous acoustic decay while keeping audio cues distinct in the headset mix.</role>
+                </row>
+            </audio>
+        </calibration>
+
+        <lore>
+            <item>
+                <title>Ten-Year Development Journey</title>
+                <fact>Project AM2R began development in 2006 by Argentine developer Milton Guasti (DoctorM64) and saw its landmark 1.0 release on August 6, 2016, coinciding with the 30th anniversary of the Metroid franchise.</fact>
+            </item>
+            <item>
+                <title>Zero Mission Physics Integration</title>
+                <fact>The game's engine was meticulously calibrated using GameMaker to faithfully reproduce the responsive ledge-grabbing and wall-jumping physics of Metroid: Zero Mission.</fact>
+            </item>
+            <item>
+                <title>Dynamic Logbook System</title>
+                <fact>AM2R introduced an expansive scanning logbook system inspired by the Metroid Prime series, providing rich biological lore on native SR388 flora and fauna.</fact>
+            </item>
+            <item>
+                <title>Community Preservation</title>
+                <fact>Following official takedown notices, the project transitioned into an open community maintenance branch, adding widescreen displays, randomizer modes, and high-framerate support.</fact>
+            </item>
+        </lore>
+    </game>
+
+    <!-- GAME 3: The Witcher 3: Wild Hunt -->
+    <game id="witcher3">
+        <title>The Witcher 3: Wild Hunt</title>
+        <subtitle>Contract Field Manual &amp; Northern Realms Quest Guide</subtitle>
+        <genre>Dark Fantasy RPG // Open World Quest</genre>
+        <badge>ACTION RPG</badge>
+        <difficulty>Death March</difficulty>
+        <time>50+ Hours</time>
+        <banner>assets/images/sh_transmission_banner.svg</banner>
+        <developer>CD PROJEKT RED</developer>
+        <target_hardware>RTX 3050 (6GB) / i7-13620H</target_hardware>
+        <audio_target>boAt Rockerz (FxSound EQ)</audio_target>
+        <summary>Track the Child of Prophecy across Velen and Skellige, brew specialized monster oils, make morally ambiguous narrative choices, and duel spectral Wild Hunt generals.</summary>
+        
+        <walkthrough>
+            <step>
+                <number>1</number>
+                <title>The Beast of White Orchard (Prologue Contract)</title>
+                <text>Gather Buckthorn herb from the riverbed to brew the Gryphon lure. Consult with herbalist Tomira, set an ambush with Vesemir in the open fields, and utilize the Aard sign and Grapeshot bombs to ground the winged Royal Griffin.</text>
+            </step>
+            <step>
+                <number>2</number>
+                <title>Investigate the Bloody Baron's Estate in Velen</title>
+                <text>Arrive at Crow's Perch. Use Witcher Senses to examine bedroom clues, uncover Princess the goat's whereabouts, and make the critical moral choice between transforming the Botchling or slaying it.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Botchling vs. Lubberkin Branch Consequences</datapad_title>
+                    <datapad_badge>DECISION SPOILER</datapad_badge>
+                    <datapad_text>Choice 1 (Transform into Lubberkin): Pacify the creature with the Axii sign twice during the procession. Leads to peaceful ancestral burial; Lubberkin guides Geralt straight to Tamara's fisherman safehouse without violent wraith combat. Choice 2 (Slay Botchling): Must battle the enraged cursed creature + 6 specters.</datapad_text>
+                    <datapad_code>RITUAL TRANSFORMATION (LUBBERKIN)</datapad_code>
+                    <datapad_note>Recommended choice for minimum loss of life and easiest quest resolution.</datapad_note>
+                </datapad>
+            </step>
+            <step>
+                <number>3</number>
+                <title>Navigate the Crookback Bog &amp; the Crones</title>
+                <text>Descend into the murky swamplands. Assist Johnny the Godling to retrieve his lost voice, solve the Whispering Hillock tree spirit dilemma, and decipher the cryptic riddles of the three Crones of Crookback Bog.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Whispering Hillock &amp; Anna's Fate</datapad_title>
+                    <datapad_badge>MAJOR PLOT FORK</datapad_badge>
+                    <datapad_text>Freeing the Tree Spirit: Saves the orphans of Crookback Bog, but the Crones curse Anna into a water hag and the Baron commits suicide. Destroying the Heart: The orphans are taken by the Crones, but Anna's mind is saved and the Baron journeys into the Blue Mountains to seek healing.</datapad_text>
+                    <datapad_code>NO MORAL PERFECTION IN VELEN</datapad_code>
+                    <datapad_note>There are no clean fairy tale endings in No Man's Land.</datapad_note>
+                </datapad>
+            </step>
+            <step>
+                <number>4</number>
+                <title>Novigrad Underworld &amp; Dandelion's Rescue</title>
+                <text>Infiltrate the criminal hierarchy of Novigrad. Track down Sigismund Dijkstra and the King of Beggars, stage a theatrical play with Priscilla to draw out Doppler allies, and breach the Temple Guard convoy to liberate Dandelion.</text>
+            </step>
+            <step>
+                <number>5</number>
+                <title>The Battle of Kaer Morhen &amp; Wild Hunt Incursion</title>
+                <text>Gather your assembled allies at the ancient Witcher stronghold. Seal the three elemental rifts using Dimeritium bombs, cast protective Quen shields, and duel the Wild Hunt commander Imlerith by dodging behind his heavy shield bash.</text>
+                <datapad>
+                    <datapad_title>Reveal Classified Data: Imlerith Second Phase Counter Tactics</datapad_title>
+                    <datapad_badge>BOSS COMBAT SPOILER</datapad_badge>
+                    <datapad_text>Second Phase Teleport Sequence: When Imlerith drops his massive shield, do not roll away immediately. Wait for the audio cue of the spectral teleport, dodge diagonally forward through his swing, and punish with Igni + Fast Silver Sword strikes.</datapad_text>
+                    <datapad_code>TELEPORT RECOVERY COOLDOWN (1.5 SECONDS)</datapad_code>
+                    <datapad_note>Quen shield will absorb exactly one full swing if you mistime your evasion.</datapad_note>
+                </datapad>
+            </step>
+        </walkthrough>
+
+        <snapshots>
+            <snapshot>
+                <title>Snapshot 01: White Orchard Mill</title>
+                <caption>Dawn lighting &amp; Griffin bait site</caption>
+                <icon>sun</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 02: Novigrad Port District</title>
+                <caption>Bustling merchant streets &amp; canal bridges</caption>
+                <icon>anchor</icon>
+            </snapshot>
+            <snapshot>
+                <title>Snapshot 03: Skellige Isles Highlands</title>
+                <caption>Rugged fjord peaks &amp; drakkar wrecks</caption>
+                <icon>mountain</icon>
+            </snapshot>
+            <video_mock>
+                <title>Gameplay Demonstration Feed: High-Level Griffin Contract &amp; Sign Combos</title>
+                <subtext>[ Mock Video Player // 4K 60FPS Ray-Traced Gameplay Capture ]</subtext>
+                <caption_desc>Demonstrates active Quen shield parries, Igni fire bursts against feathered wings, and optimal silver sword oil rotations.</caption_desc>
+            </video_mock>
+        </snapshots>
+
+        <map>
+            <title>Interactive Northern Realms Strategic Map</title>
+            <subtitle>Hover over pulsing waypoints across Velen, Novigrad, and Kaer Morhen to view contract locations.</subtitle>
+            <svg_image>assets/images/witcher_map.svg</svg_image>
+            <radar_label>ROYAL CARTOGRAPHY // THE CONTINENT: NORTHERN REALMS</radar_label>
+            <radar_coords>REGION: NO MAN'S LAND &amp; REDANIA</radar_coords>
+            <markers>
+                <marker top="25%" left="45%">
+                    <title>Free City of Novigrad</title>
+                    <desc>Hierarch Square, bank exchanges &amp; Dandelion's cabaret</desc>
+                </marker>
+                <marker top="48%" left="35%">
+                    <title>Crow's Perch // Velen</title>
+                    <desc>The Bloody Baron's fortress, master armorer, and Botchling grave</desc>
+                </marker>
+                <marker top="68%" left="58%">
+                    <title>Crookback Bog // Orphanage</title>
+                    <desc>The Trail of Treats, Godling burrows, and Crones' tapestry</desc>
+                </marker>
+                <marker top="18%" left="82%">
+                    <title>Kaer Morhen // Blue Mountains</title>
+                    <desc>Ancient Witcher keep &amp; Wild Hunt siege battlefield</desc>
+                </marker>
+            </markers>
+        </map>
+
+        <characters>
+            <character role="Protagonist // Monster Hunter">
+                <name>Geralt of Rivia (The White Wolf)</name>
+                <type>Protagonist</type>
+                <bio>Master Witcher of the School of the Wolf. Mutated through the Trial of the Grasses to possess superhuman reflex speeds, cat-like night vision, and resistance to toxins.</bio>
+            </character>
+            <character role="Antagonist // Aen Elle Warlord">
+                <name>Eredin Bréacc Glas</name>
+                <type>Antagonist</type>
+                <bio>Ruthless elven general commanding the spectral Red Riders. Seeks to capture Ciri to harness her Elder Blood lineage and transport his dying civilization across dimensions.</bio>
+            </character>
+        </characters>
+
+        <calibration>
+            <hardware>
+                <title>Hardware Calibration: RTX 3050 (6GB Mobile) / Core i7-13620H</title>
+                <target>STABLE 60 FPS NEXT-GEN UPDATE</target>
+                <subtitle>Optimized settings for The Witcher 3: Wild Hunt Complete Edition (DirectX 12) balancing fidelity with high frametime stability in crowded Novigrad streets.</subtitle>
+                <row>
+                    <param>Ray Tracing (RTGI &amp; RT Shadows)</param>
+                    <value>DISABLED (OFF)</value>
+                    <impact>RT on the 6GB 3050 mobile causes severe VRAM thrashing and drops frames into single digits. Turning it OFF guarantees solid 60 FPS.</impact>
+                </row>
+                <row>
+                    <param>NVIDIA HairWorks</param>
+                    <value>GERALT ONLY // AA 2X</value>
+                    <impact>Keeps realistic strands on the White Wolf while eliminating catastrophic tessellation hits when encountering wolf packs.</impact>
+                </row>
+                <row>
+                    <param>DLSS Super Resolution</param>
+                    <value>QUALITY (1080p Target)</value>
+                    <impact>Renders at 720p with superior anti-aliasing; completely stabilizes frame drops inside dense vegetation in Crookback Bog.</impact>
+                </row>
+                <row>
+                    <param>Texture Memory Budget &amp; Foliage Visibility</param>
+                    <value>HIGH // HIGH (NOT ULTRA+)</value>
+                    <impact>Ultra+ exceeds the 6GB VRAM buffer in Novigrad, causing stuttering when riding Roach at sprint speeds.</impact>
+                </row>
+                <row>
+                    <param>Shadow Quality &amp; Water Quality</param>
+                    <value>MEDIUM // HIGH</value>
+                    <impact>Minimal visual downgrade from Ultra; frees up valuable rasterization performance for dense swamps.</impact>
+                </row>
+            </hardware>
+            <audio>
+                <title>Acoustic Calibration: boAt Rockerz (FxSound / Sound Blaster EQ)</title>
+                <target>SLAVIC FOLK &amp; COMBAT EQ</target>
+                <subtitle>Tuned to highlight Percival's acoustic folk instruments, deep equine galloping rhythms, and directional monster grunts.</subtitle>
+                <row>
+                    <band>125 Hz (Roach Gallop &amp; Heavy Signs)</band>
+                    <gain>+3.5 dB</gain>
+                    <role>Gives visceral, grounded weight to Roach's hooves on cobblestone and the concussive burst of the Aard sign.</role>
+                </row>
+                <row>
+                    <band>1 kHz - 2.5 kHz (Slavic Vocals &amp; Lute)</band>
+                    <gain>+3.0 dB</gain>
+                    <role>Brings forward vocal harmonies in combat themes ("Silver for Monsters") and keeps dialogue clear during windy storms.</role>
+                </row>
+                <row>
+                    <band>4 kHz - 6 kHz (Silver Blade Clashes)</band>
+                    <gain>+1.5 dB</gain>
+                    <role>Accentuates sharp metallic ringing on successful sword parries against human bandits and armored Wild Hunt knights.</role>
+                </row>
+                <row>
+                    <band>8 kHz - 12 kHz (Wind &amp; Foliage)</band>
+                    <gain>-2.5 dB</gain>
+                    <role>Dampens high-frequency harsh sibilance during high-gale forest storms ("Wind's howling").</role>
+                </row>
+                <row>
+                    <band>Spatial Surround / Bass Boost</band>
+                    <gain>SURROUND 50% // BASS +2</gain>
+                    <role>Provides directional orientation for drowners surfacing from swamp water behind Geralt.</role>
+                </row>
+            </audio>
+        </calibration>
+
+        <lore>
+            <item>
+                <title>The Origins of Gwent</title>
+                <fact>The widely celebrated in-game minigame Gwent was conceived and prototyped over a single weekend by design leads Damien Monnier and Rafał Jaki using sticky notes and index cards.</fact>
+            </item>
+            <item>
+                <title>Dynamic Beard Growth Technology</title>
+                <fact>Geralt's facial hair actively grows as in-game days pass or when fast-traveling between regions, requiring players to visit barbers in Oxenfurt or Novigrad for grooming.</fact>
+            </item>
+            <item>
+                <title>Voice Acting Scale</title>
+                <fact>Over 500 individual voice actors contributed to the game's localized audio, recording more than 450,000 words across 15 different languages.</fact>
+            </item>
+            <item>
+                <title>Award-Winning Benchmark</title>
+                <fact>The Witcher 3: Wild Hunt secured over 250 Game of the Year awards upon its 2015 release, setting an industry record for critical and narrative accolades.</fact>
+            </item>
+        </lore>
+    </game>
+</database>
